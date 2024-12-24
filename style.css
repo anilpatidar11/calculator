@@ -4,42 +4,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .bg {
-
-
-  background-image: url("bg-image.jpg");
-
+  background-image: url("bg-image2.avif");
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
-
-
 .my-work {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 90%; 
-  max-width: 500px; 
+  width: 90%;
+  max-width: 500px;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #73a3d7;
   border-radius: 30px;
 
-  box-shadow: 2px 2px 6px 11px #da67a8;
-
-}
- span{
-color:rgb(224, 212, 212);
-font-weight: bold;
-font-size: 20px;
+  box-shadow: 2px 3px 6px 8px #adb5d1;
+  background-color: rgba(255, 255, 255, 0.4); 
+  backdrop-filter: blur(4px);
 }
 
+
+
+
+
+
+
+
+span {
+  color: rgb(64, 214, 237);
+  font-weight: bold;
+  font-size: 20px;
+}
 
 .my-work div {
   display: flex;
@@ -74,35 +75,34 @@ font-size: 20px;
 }
 
 .my-btn div {
-  width: 100%; 
-  max-width: 140px; 
+  width: 100%;
+  max-width: 140px;
 }
-
 
 @media (max-width: 768px) {
   .my-work {
-    width: 100%; 
-    padding: 15px; 
+    width: 100%;
+    padding: 15px;
   }
 
   .my-btn div {
-    max-width: 100px; 
+    max-width: 100px;
   }
 }
 
 @media (max-width: 480px) {
   .my-work {
-    gap: 10px; 
+    gap: 10px;
     padding: 10px;
   }
 
   .my-btn {
-    flex-direction: column; 
+    flex-direction: column;
     gap: 10px;
   }
 
   .my-btn div {
-    width: 100%; 
-    max-width: none; 
+    width: 100%;
+    max-width: none;
   }
 }
