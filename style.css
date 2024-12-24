@@ -1,0 +1,86 @@
+.main-div {
+  background-color: #f0f8ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-work {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%; 
+  max-width: 500px; 
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+}
+
+.my-work div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.my-work label {
+  font-weight: bold;
+  color: #333;
+}
+
+.my-work input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.my-work input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.my-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.my-btn div {
+  width: 100%; 
+  max-width: 150px; 
+}
+
+
+@media (max-width: 768px) {
+  .my-work {
+    width: 100%; 
+    padding: 15px; 
+  }
+
+  .my-btn div {
+    max-width: 100px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .my-work {
+    gap: 10px; 
+    padding: 10px;
+  }
+
+  .my-btn {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .my-btn div {
+    width: 100%; 
+    max-width: none; 
+  }
+}
